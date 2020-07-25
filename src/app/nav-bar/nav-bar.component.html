@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a href="#" class="navbar-brand"><img src="../../assets/Logo.PNG" height="45"></a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <div class="navbar-nav">
+          <a href="#" class="nav-item nav-link active">Home</a>
+          <a  routerLink="/projects" class="nav-item nav-link">Projects</a>
+          <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Messages</a>
+              <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Inbox</a>
+                  <a href="#" class="dropdown-item">Sent</a>
+                  <a href="#" class="dropdown-item">Drafts</a>
+              </div>
+          </div>
+      </div>
+      <form class="form-inline">
+          <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-append">
+                  <button type="button" class="btn btn-secondary"><fa-icon [icon]="search"></fa-icon></button>
+              </div>
+          </div>
+      </form>
+      <div class="navbar-nav">
+          <a href="#" class="nav-item nav-link">Login</a>
+      </div>
+  </div>
+</nav>
